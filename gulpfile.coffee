@@ -37,6 +37,12 @@ gulp.task 'test', [ 'scripts' ], ( ) ->
 	gulp.src paths.tests, 'read': false
 		.pipe plugins.mocha 'reporter': 'spec'
 
+# Test and exit
+gulp.task 'test-and-exit', [ 'scripts' ], ( ) ->
+	gulp.src paths.tests, 'read': false
+		.pipe plugins.mocha 'reporter': 'spec'
+		.pipe plugins.exit( )
+
 # Lint generated JavaScript
 gulp.task 'lint-js', [ 'scripts' ], ( ) ->
 	gulp.src paths.output

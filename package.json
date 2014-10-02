@@ -1,6 +1,6 @@
 {
   "name": "ssss",
-  "version": "0.0.1",
+  "version": "1.0.0-beta1",
   "description": "Super Simple Shared Stats. A simple time-series counter aggregation/syndication library for node backed by Redis and nothing else. Ideal for keeping track of counts between several processes.",
   "main": "lib/index.js",
   "keywords": [
@@ -31,28 +31,30 @@
   },
   "dependencies": {
     "async": "~0.8.0",
-    "redis": "~0.10.1"
+    "redis": "~0.10.3"
   },
   "devDependencies": {
-    "chai": "^1.9.1",
-    "chai-fuzzy": "^1.4.0",
-    "chai-things": "^0.2.0",
-    "coffee-script": "^1.8.0",
-    "gulp": "^3.8.8",
-    "gulp-coffee": "^2.2.0",
-    "gulp-coffeelint": "^0.4.0",
-    "gulp-jshint": "^1.8.4",
-    "gulp-load-plugins": "^0.6.0",
-    "gulp-mocha": "^1.0.0",
-    "gulp-plumber": "^0.6.5",
-    "gulp-sourcemaps": "^1.1.4",
-    "gulp-util": "^3.0.1",
-    "jshint-stylish": "^0.4.0",
-    "mocha": "^1.21.4",
-    "rimraf": "^2.2.8",
-    "sinon": "^1.10.3",
-    "sinon-chai": "^2.5.0",
-    "source-map-support": "^0.2.7"
+    "chai": "~1.9.2",
+    "chai-fuzzy": "~1.4.0",
+    "chai-things": "~0.2.0",
+    "coffee-script": "~1.8.0",
+    "gulp": "~3.8.8",
+    "gulp-coffee": "~2.2.0",
+    "gulp-coffeelint": "~0.4.0",
+    "gulp-exit": "0.0.2",
+    "gulp-jshint": "~1.8.5",
+    "gulp-load-plugins": "~0.7.0",
+    "gulp-mocha": "~1.1.0",
+    "gulp-plumber": "~0.6.6",
+    "gulp-sourcemaps": "~1.2.2",
+    "gulp-util": "~3.0.1",
+    "jshint-stylish": "~1.0.0",
+    "mocha": "~1.21.4",
+    "rimraf": "~2.2.8",
+    "sinon": "~1.10.3",
+    "sinon-chai": "~2.5.0",
+    "source-map-support": "~0.2.7",
+    "underscore": "~1.7.0"
   },
   "engines": {
     "node": ">=0.8.0"

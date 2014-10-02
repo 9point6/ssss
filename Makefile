@@ -2,11 +2,10 @@ build:
 	@gulp scripts
 
 test:
-	@gulp test
+	@gulp test-and-exit
 
 install:
 	@npm install
-	@node app/setup
 
 clean:
 	@gulp clean
