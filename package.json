@@ -1,6 +1,6 @@
 {
   "name": "ssss",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "description": "Super Simple Shared Stats. A simple time-series counter aggregation/syndication library for node backed by Redis and nothing else. Ideal for keeping track of counts between several processes.",
   "main": "lib/index.js",
   "keywords": [
