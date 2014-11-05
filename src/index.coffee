@@ -116,7 +116,7 @@ module.exports = class SuperSimpleSharedStats
 				@redis.hget @keys.data, minute, next
 
 		], ( err, data ) ->
-			callback? null, data
+			callback? null, parseFloat data
 
 	###
 	# Responds with the average over the past sample period (default 5 mins)
@@ -142,4 +142,4 @@ module.exports = class SuperSimpleSharedStats
 
 		], ( err, data ) ->
 			ret = ( data.reduce( ( ( a, b ) -> a + parseInt b ), 0 ) / samplePeriod )
-			callback? null, ret
+			callback? null, parseFloat ret

@@ -115,7 +115,7 @@ describe 'Super Simple Stats Syndicate', ( ) ->
 			# Check value for current minute
 			stat.pastMinute ( err, val ) ->
 				expect val, 'Ping count'
-					.to.equal '0'
+					.to.equal 0
 
 				done( )
 
@@ -125,7 +125,7 @@ describe 'Super Simple Stats Syndicate', ( ) ->
 			# Check value for current minute
 			stat.pastMinute true, ( err, val ) ->
 				expect val, 'Ping count'
-					.to.equal '10'
+					.to.equal 10
 
 				done( )
 
